@@ -1,6 +1,6 @@
 # md-editor
 
-Un éditeur de markdown reposant sur codemirror et permettant une preview (live et/ou action de l'utiisateur, à vous de voir), avec deux panneaux juxtaposés, qui puisse fonctionner en ligne ou en local.
+Un éditeur de markdown reposant sur codemirror et permettant une preview (live et/ou action de l'utiisateur, à vous de voir), avec deux panneaux juxtaposés, qui puisse fonctionner en ligne ou en local. Le choix des librairies est à votre libre appréciation.
 
 C'est un travail personnel, qui a pour but, pour vous comme pour nous, de permettre d'évaluer les compètences que vous avez acquis.
 Il reste un mois de formation, c'est le moment de mettre à l'épreuve le savoir que  vous avez accumulé avec une mise en application similaire à celle que vous aurez en entreprise.
@@ -28,6 +28,7 @@ N'hésitez pas également à améliorer ce document via un pull request et à po
 - Déploiement sur un VPS (smp, perso, heroku...)
 
 ## Préparation & modalités
+- Validation du trello et du choix des technos/librairies avant de commencer à coder
 - Pomodoro et trello obligatoire
 - Code sur github (fork de ce repo)
 
