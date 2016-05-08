@@ -33,5 +33,9 @@ N'hésitez pas également à améliorer ce document via un pull request et à po
 
 ## Evaluation
 - code review commentée (facilitez nous la vie, faites de commit clairs en ajoutant les fichiers uniquement lié à la fonctionnalité que vous implémentez)
+- organisation du trello
 
+Nous prêterons attention à la qualité de votre code, ainsi qu'à l'organisation autour du projet (clarté des commits, précision des tâches) et attendons du professionalisme de votre part (pas de fonctionnalité farfelu ou inutile, une attention à l'accessibillité et  l'expérience utilisateur, pas de choix esthétiques douteux; communication claire et apaisée avec vos camarades...)
+
+### Have fun !
  
