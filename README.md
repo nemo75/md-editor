@@ -13,7 +13,7 @@ N'hésitez pas également à améliorer ce document via un pull request et à po
 ### 1ère étape (3j max)
 - Créer un éditeur de markdown avec [CodeMirror 2](http://codemirror.net/2/mode/gfm/index.html) avec preview
 - Ajouter une fonctionnalité de prévisualisation
-- Sauvegarder les fichiers dans localStorage ([comprendre localSotrage - developpez.net](http://debray-jerome.developpez.com/articles/comprendre-le-storage-en-html5/), [doc MDN](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage))
+- Sauvegarder les fichiers dans localStorage ([comprendre localStorage - developpez.net](http://debray-jerome.developpez.com/articles/comprendre-le-storage-en-html5/), [doc MDN](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage))
 - Déployer sur une github Page
 
 ### 2ème étape (2j max)
