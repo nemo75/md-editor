@@ -2,9 +2,9 @@ body {
   background-color: teal;
   color: white; }
 
-#container .results {
+.contain {
   margin-top: 10%; }
-  #container .results .result {
+  .contain #resultat {
     height: 350px;
     background-color: white;
     color: black; }

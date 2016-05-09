@@ -2,13 +2,11 @@ body {
 	background-color:teal;
 	color:white;
 }
-#container {
-	.results{
-		margin-top: 10%;
-		.result {
+.contain {
+			margin-top: 10%;
+		#resultat {
 			height: 350px;
 			background-color:white;
 			color: black;
-		}
 	}
 }
