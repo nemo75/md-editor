@@ -1,0 +1,12 @@
+body {
+  background-color: teal;
+  color: white; }
+
+#container .results {
+  margin-top: 10%; }
+  #container .results .result {
+    height: 350px;
+    background-color: white;
+    color: black; }
+
+/*# sourceMappingURL=style.css.map */

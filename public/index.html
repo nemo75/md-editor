@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>React all the things !</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="lib/codemirror.css">
+</head>
+<body>
+	<h1>React</h1>
+	<div id="container">
+		<div class="in">
+			<form>
+				<label for="">Type your Markdown</label>
+				<textarea name="editeur" id="code" cols="530" rows="510"># salut</textarea>
+			</form>
+		</div>
+		<div class="results">
+			<label for="">Your results</label>
+			<div class="result"></div>
+		</div>
+	</div>
+	<script src="/lib/codemirror.js"></script>
+	<script src="/lib/jquery.min.js"></script>
+	<script src="/mode/javascript/javascript.js"></script>
+	<script src="/mode/markdown/markdown.js"></script>
+	<script src="/mode/xml/xml.js"></script>
+	<script src="/mode/htmlmixed/htmlmixed.js"></script>
+	<script src="/js/bundle.js"></script>
+</body>
+</html>
