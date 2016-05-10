@@ -2,11 +2,10 @@ body {
   background-color: teal;
   color: white; }
 
-.contain {
-  margin-top: 10%; }
-  .contain #resultat {
-    height: 350px;
-    background-color: white;
-    color: black; }
+#resultat {
+  margin-top: 10%;
+  height: 350px;
+  color: black;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
