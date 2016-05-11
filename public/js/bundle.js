@@ -31923,9 +31923,12 @@ require('codemirror/mode/markdown/markdown');
 var App = React.createClass({
 	displayName: 'App',
 
+	componentDidMount: function componentDidMount() {},
 	getInitialState: function getInitialState() {
 		var couleur = localStorage.getItem("recup");
-		$('#resultat').html(couleur);
+		var cod = marked(couleur);
+		$('#resultat').html(cod);
+
 		return {
 			code: couleur
 		};
@@ -31934,18 +31937,19 @@ var App = React.createClass({
 		this.setState({
 			code: newCode
 		});
+		var test = newCode;
 		var cod = marked(newCode);
 		$('#resultat').html(cod);
-		localStorage.setItem("recup", cod);
+		localStorage.setItem("recup", test);
 	},
 	render: function render() {
-		var options = {
+		var myCodeMirror = {
 			lineNumbers: true,
 			matchBrackets: true,
 			lineWrapping: true,
 			mode: "markdown"
 		};
-		return React.createElement(Codemirror, { value: this.state.code, onChange: this.updateCode, options: options });
+		return React.createElement(Codemirror, { value: this.state.code, onChange: this.updateCode, options: myCodeMirror });
 	}
 });
 

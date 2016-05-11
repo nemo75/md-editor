@@ -11,9 +11,14 @@ require('codemirror/mode/markdown/markdown');
 
 
 var App = React.createClass({
+	componentDidMount: function(){
+
+	},
 	getInitialState: function(){
 		var couleur = localStorage.getItem("recup");
-		$('#resultat').html(couleur);
+		var cod = marked(couleur);
+		$('#resultat').html(cod);
+
 		return {
 			code: couleur
 		};
@@ -22,20 +27,21 @@ var App = React.createClass({
 		this.setState({
 			code: newCode,
 		});
+		var test = newCode;
 		 var cod = marked(newCode);
 		 $('#resultat').html(cod);
-		 localStorage.setItem("recup",cod);
+		 localStorage.setItem("recup",test);
 
 
 	},
 	render: function() {
-		var options = {
+		var myCodeMirror = {
 			lineNumbers: true,
 			matchBrackets: true,
 			lineWrapping: true,
 			mode: "markdown"
 		};
-		return <Codemirror value={this.state.code} onChange={this.updateCode} options={options} />
+		return <Codemirror value={this.state.code} onChange={this.updateCode} options={myCodeMirror} />
 	}
 });
 
