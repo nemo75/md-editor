@@ -11,9 +11,6 @@ require('codemirror/mode/markdown/markdown');
 
 
 var App = React.createClass({
-	componentDidMount: function(){
-
-	},
 	getInitialState: function(){
 		var couleur = localStorage.getItem("recup");
 		var cod = marked(couleur);
