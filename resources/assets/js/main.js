@@ -2,6 +2,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Codemirror = require('react-codemirror');
+var marked = require('marked');
 require('codemirror/mode/javascript/javascript');
 require('codemirror/mode/xml/xml');
 require('codemirror/mode/markdown/markdown');
@@ -9,30 +10,23 @@ require('codemirror/mode/markdown/markdown');
 
 
 
-
 var App = React.createClass({
- 	componentDidMount: function(){
- 		console.log("didmount")
- 		// var result = this.options.getValue(); 
-
- 		 // function  prout(){
- 		 // 	console.log(result);
- 		 // }
-		 // setInterval(prout, 1050)
- 	},
 	getInitialState: function(){
+		var couleur = localStorage.getItem("recup");
+		$('#resultat').html(couleur);
 		return {
-			code: ""
+			code: couleur
 		};
 	},
 	updateCode: function(newCode) {
 		this.setState({
 			code: newCode,
 		});
-			$(".ReactCodeMirror").on("keypress keyup keydown",function(e){
-				var code = " ";
-				$('#resultat').append(code);
-			});
+		 var cod = marked(newCode);
+		 $('#resultat').html(cod);
+		 localStorage.setItem("recup",cod);
+
+
 	},
 	render: function() {
 		var options = {
@@ -46,24 +40,6 @@ var App = React.createClass({
 });
 
 ReactDOM.render(<App />, document.getElementById('big'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

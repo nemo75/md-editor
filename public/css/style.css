@@ -2,10 +2,23 @@ body {
   background-color: teal;
   color: white; }
 
-#resultat {
-  margin-top: 10%;
+.title {
+  text-align: center; }
+
+#big .ReactCodeMirror {
+  width: 50%;
+  margin: auto;
   height: 350px;
+  margin-bottom: 15px; }
+
+#resultat {
+  margin-top: 100px;
+  height: 350px;
+  width: 50%;
   color: black;
-  background-color: white; }
+  background-color: white;
+  display: block;
+  margin: auto;
+  padding-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */
