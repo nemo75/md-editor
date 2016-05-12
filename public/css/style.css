@@ -1,6 +1,5 @@
 body {
-  background-color: teal;
-  color: white; }
+  background-color: #f0f0f0; }
 
 .title {
   text-align: center; }
@@ -11,19 +10,26 @@ body {
   color: black;
   display: inline-block;
   vertical-align: top;
-  margin-left: 20px; }
+  margin-left: 20px;
+  display: none; }
 
-.contain {
-  display: inline-block;
-  width: 50%;
+#big {
   margin-left: 5%; }
-  .contain #big .ReactCodeMirror {
-    height: 350px;
-    margin-bottom: 15px; }
-  .contain #resultat {
-    height: 300px;
-    padding-left: 5px;
+  #big .contain .CodeMirror {
+    height: 700px; }
+  #big .contain .ReactCodeMirror {
+    min-height: 800px;
+    vertical-align: top;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 49%; }
+  #big .resultat {
+    height: 700px;
+    width: 49%;
     overflow-y: scroll;
+    padding-left: 5px;
+    margin-left: 5px;
+    display: inline-block;
     color: black;
     background-color: white;
     padding-left: 5px; }
